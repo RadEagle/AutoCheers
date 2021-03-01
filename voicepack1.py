@@ -7,7 +7,7 @@ pyglet.options['search_local_libs'] = True
 
 # Get a random value
 file_count = len(os.listdir('keqing'))
-x = int(1 + np.random.rand() * file_count)
+x = np.random.randint(1, file_count)
 
 # Load media
 audio_file = 'keqing/{}.wav'.format(x)
