@@ -1,16 +1,22 @@
 import os
-import numpy as np
+import random
 import pyglet
 
 # Let pyglet access all files inside directory
 pyglet.options['search_local_libs'] = True
+audio_dir = os.listdir('keqing')
+
+# Get .wav file count
+waves = []
+for filename in audio_dir:
+    if '.wav' in filename:
+        waves.append(filename)
 
 # Get a random value
-file_count = len(os.listdir('keqing'))
-x = np.random.randint(1, file_count)
+x = random.choice(waves)
 
 # Load media
-audio_file = 'keqing/{}.wav'.format(x)
+audio_file = 'keqing/{}'.format(x)
 audio = pyglet.media.load(audio_file)
 player = pyglet.media.Player()
 player.queue(audio)
