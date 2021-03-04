@@ -12,8 +12,6 @@ It's that easy! No more searching up your character to find different files.
 Oh, did I mention that when you play this file, they speak a random phrase?
 
 Requirements:
-
-  `pip install numpy`
   
   `pip install pyglet`
 
