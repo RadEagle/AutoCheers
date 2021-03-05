@@ -13,6 +13,8 @@ Oh, did I mention that when you play this file, they speak a random phrase?
 
 Requirements:
   
-  `pip install pyglet`
+  Type this into your terminal: `pip install pyglet`
+  
+Once you've installed pyglet, simply download this file and lauch the python file with your Python launcher!
 
 Notes: Currently only one character is supported. More characters will be added later. :)
